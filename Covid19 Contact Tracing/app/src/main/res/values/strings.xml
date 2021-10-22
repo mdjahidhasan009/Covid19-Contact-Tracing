@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Covid19 Contact Tracing</string>
+    <string name="action_start_scan">Scan</string>
+    <string name="action_stop_scan">Stop</string>
+    <string name="scanning">Scanning...</string>
+    <string name="peripheral_list_empty">No Peripherals Found</string>
+
+</resources>

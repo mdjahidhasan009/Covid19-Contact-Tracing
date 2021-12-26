@@ -22,13 +22,13 @@ import java.util.TimerTask;
  */
 public class BleCommManager {
     private static final String TAG = BleCommManager.class.getSimpleName();
-    private static final long SCAN_PERIOD = 50000; // 50 seconds of scanning time
+    private static final long SCAN_PERIOD = 5000; // 50 seconds of scanning time
 
     private BluetoothAdapter mBluetoothAdapter; // Andrdoid's Bluetooth Adapter
     private BluetoothLeScanner mBluetoothLeScanner; // Ble scanner - API >= 21
 
 
-    private Timer mTimer = new Timer(); // scan timer
+//    private Timer mTimer = new Timer(); // scan timer
 
     /**
      * Initialize the BleCommManager
@@ -66,7 +66,7 @@ public class BleCommManager {
      */
     public void scanForPeripherals(final BleScanCallbackv18 bleScanCallbackv18, final BleScanCallbackv21 bleScanCallbackv21) throws Exception {
         // Don't proceed if there is already a scan in progress
-        mTimer.cancel();
+//        mTimer.cancel();
 
         // Use BluetoothAdapter.startLeScan() for Android API 18, 19, and 20
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
@@ -77,23 +77,23 @@ public class BleCommManager {
                 public void run() {
                     mBluetoothAdapter.startLeScan(bleScanCallbackv18);
 
-                    try {
-                        Thread.sleep(SCAN_PERIOD);
-                        mBluetoothAdapter.stopLeScan(bleScanCallbackv18);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
+//                    try {
+//                        Thread.sleep(SCAN_PERIOD);
+//                        mBluetoothAdapter.stopLeScan(bleScanCallbackv18);
+//                    } catch (InterruptedException e) {
+//                        e.printStackTrace();
+//                    }
 
                 }
             }.start();
             // alert the system that BLE scanning has stopped after SCAN_PERIOD milliseconds
-            mTimer = new Timer();
-            mTimer.schedule(new TimerTask() {
-                @Override
-                public void run() {
-                    stopScanning(bleScanCallbackv18, bleScanCallbackv21);
-                }
-            }, SCAN_PERIOD);
+//            mTimer = new Timer();
+//            mTimer.schedule(new TimerTask() {
+//                @Override
+//                public void run() {
+//                    stopScanning(bleScanCallbackv18, bleScanCallbackv21);
+//                }
+//            }, SCAN_PERIOD);
 
 
         } else { // use BluetoothLeScanner.startScan() for API 21 (Lollipop) or greater
@@ -109,22 +109,22 @@ public class BleCommManager {
                 public void run() {
                     mBluetoothLeScanner.startScan(filters, settings, bleScanCallbackv21);
 
-                    try {
-                        Thread.sleep(SCAN_PERIOD);
-                        mBluetoothLeScanner.stopScan(bleScanCallbackv21);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
+//                    try {
+//                        Thread.sleep(SCAN_PERIOD);
+//                        mBluetoothLeScanner.stopScan(bleScanCallbackv21);
+//                    } catch (InterruptedException e) {
+//                        e.printStackTrace();
+//                    }
                 }
             }.start();
             // alert the system that BLE scanning has stopped after SCAN_PERIOD milliseconds
-            mTimer = new Timer();
-            mTimer.schedule(new TimerTask() {
-                @Override
-                public void run() {
-                    stopScanning(bleScanCallbackv18, bleScanCallbackv21);
-                }
-            }, SCAN_PERIOD);
+//            mTimer = new Timer();
+//            mTimer.schedule(new TimerTask() {
+//                @Override
+//                public void run() {
+//                    stopScanning(bleScanCallbackv18, bleScanCallbackv21);
+//                }
+//            }, SCAN_PERIOD);
         }
 
     }
@@ -137,7 +137,7 @@ public class BleCommManager {
      * @param bleScanCallbackv21 APIv21 compatible ScanCallback
      */
     public void stopScanning(final BleScanCallbackv18 bleScanCallbackv18, final BleScanCallbackv21 bleScanCallbackv21) {
-        mTimer.cancel();
+//        mTimer.cancel();
 
         // propagate the onScanComplete through the system
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {

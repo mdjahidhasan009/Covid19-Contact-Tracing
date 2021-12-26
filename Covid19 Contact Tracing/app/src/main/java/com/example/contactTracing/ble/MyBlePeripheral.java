@@ -19,7 +19,7 @@ public class MyBlePeripheral {
     private static final String TAG = MyBlePeripheral.class.getSimpleName();
 
     //Peripheral and GATT profile
-    public static final String ADVERTISING_NAME = "other";
+    public static final String ADVERTISING_NAME = "Jahid";
     /**
      * Advertising settings
      **/

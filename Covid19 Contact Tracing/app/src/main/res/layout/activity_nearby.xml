@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:padding="10pt"
+    tools:context=".nearby">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10pt"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/aldrich"
+                    android:text="You are on"
+                    android:textColor="#FDFDFD"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                app:alignItems="flex_start"
+                app:flexWrap="wrap">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <net.igenius.customcheckbox.CustomCheckBox
+                        android:id="@+id/i1"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="16dp"
+                        android:clickable="false"
+                        android:contextClickable="false"
+                        android:focusable="auto"
+                        android:focusableInTouchMode="true"
+                        android:longClickable="false"
+                        android:soundEffectsEnabled="true"
+                        app:color_checked="@color/Wheat"
+                        app:color_tick="@color/colorPrimary"
+                        app:color_unchecked="#FF8A65"
+                        app:color_unchecked_stroke="@color/colorAccent_matte"
+                        app:small_tick="true"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Day 1"
+                        android:textAlignment="center"
+                        android:textColor="@color/Wheat"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <net.igenius.customcheckbox.CustomCheckBox
+                        android:id="@+id/i2"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="16dp"
+                        android:clickable="false"
+                        android:contextClickable="false"
+                        android:focusable="auto"
+                        android:focusableInTouchMode="true"
+                        android:longClickable="false"
+                        android:soundEffectsEnabled="true"
+                        app:color_checked="@color/Wheat"
+                        app:color_tick="@color/colorPrimary"
+                        app:color_unchecked="#FF8A65"
+                        app:color_unchecked_stroke="@color/colorAccent_matte"
+                        app:small_tick="true"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Day 2"
+                        android:textAlignment="center"
+                        android:textColor="@color/Wheat"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <net.igenius.customcheckbox.CustomCheckBox
+                        android:id="@+id/i3"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="16dp"
+                        android:clickable="false"
+                        android:contextClickable="false"
+                        android:focusable="auto"
+                        android:focusableInTouchMode="true"
+                        android:longClickable="false"
+                        android:soundEffectsEnabled="true"
+                        app:color_checked="@color/Wheat"
+                        app:color_tick="@color/colorPrimary"
+                        app:color_unchecked="#FF8A65"
+                        app:color_unchecked_stroke="@color/colorAccent_matte"
+                        app:small_tick="true"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Day 3"
+                        android:textAlignment="center"
+                        android:textColor="@color/Wheat"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <net.igenius.customcheckbox.CustomCheckBox
+                        android:id="@+id/i4"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="16dp"
+                        android:clickable="false"
+                        android:contextClickable="false"
+                        android:focusable="auto"
+                        android:focusableInTouchMode="true"
+                        android:longClickable="false"
+                        android:soundEffectsEnabled="true"
+                        app:color_checked="@color/Wheat"
+                        app:color_tick="@color/colorPrimary"
+                        app:color_unchecked="#FF8A65"
+                        app:color_unchecked_stroke="@color/colorAccent_matte"
+                        app:small_tick="true"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Day 4"
+                        android:textAlignment="center"
+                        android:textColor="@color/Wheat"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <net.igenius.customcheckbox.CustomCheckBox
+                        android:id="@+id/i5"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="16dp"
+                        android:clickable="false"
+                        android:contextClickable="false"
+                        android:focusable="auto"
+                        android:focusableInTouchMode="true"
+                        android:longClickable="false"
+                        android:soundEffectsEnabled="true"
+                        app:color_checked="@color/Wheat"
+                        app:color_tick="@color/colorPrimary"
+                        app:color_unchecked="#FF8A65"
+                        app:color_unchecked_stroke="@color/colorAccent_matte"
+                        app:small_tick="true"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Day 5"
+                        android:textAlignment="center"
+                        android:textColor="@color/Wheat"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <net.igenius.customcheckbox.CustomCheckBox
+                        android:id="@+id/i6"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="16dp"
+                        android:clickable="false"
+                        android:contextClickable="false"
+                        android:focusable="auto"
+                        android:focusableInTouchMode="true"
+                        android:longClickable="false"
+                        android:soundEffectsEnabled="true"
+                        app:color_checked="@color/Wheat"
+                        app:color_tick="@color/colorPrimary"
+                        app:color_unchecked="#FF8A65"
+                        app:color_unchecked_stroke="@color/colorAccent_matte"
+                        app:small_tick="true"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Day 6"
+                        android:textAlignment="center"
+                        android:textColor="@color/Wheat"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <net.igenius.customcheckbox.CustomCheckBox
+                        android:id="@+id/i7"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="16dp"
+                        android:clickable="false"
+                        android:contextClickable="false"
+                        android:focusable="auto"
+                        android:focusableInTouchMode="true"
+                        android:longClickable="false"
+                        android:soundEffectsEnabled="true"
+                        app:color_checked="@color/Wheat"
+                        app:color_tick="@color/colorPrimary"
+                        app:color_unchecked="#FF8A65"
+                        app:color_unchecked_stroke="@color/colorAccent_matte"
+                        app:small_tick="true"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Day 7"
+                        android:textAlignment="center"
+                        android:textColor="@color/Wheat"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <net.igenius.customcheckbox.CustomCheckBox
+                        android:id="@+id/i8"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="16dp"
+                        android:clickable="false"
+                        android:contextClickable="false"
+                        android:focusable="auto"
+                        android:focusableInTouchMode="true"
+                        android:longClickable="false"
+                        android:soundEffectsEnabled="true"
+                        app:color_checked="@color/Wheat"
+                        app:color_tick="@color/colorPrimary"
+                        app:color_unchecked="#FF8A65"
+                        app:color_unchecked_stroke="@color/colorAccent_matte"
+                        app:small_tick="true"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Day 8"
+                        android:textAlignment="center"
+                        android:textColor="@color/Wheat"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <net.igenius.customcheckbox.CustomCheckBox
+                        android:id="@+id/i9"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="16dp"
+                        android:clickable="false"
+                        android:contextClickable="false"
+                        android:focusable="auto"
+                        android:focusableInTouchMode="true"
+                        android:longClickable="false"
+                        android:soundEffectsEnabled="true"
+                        app:color_checked="@color/Wheat"
+                        app:color_tick="@color/colorPrimary"
+                        app:color_unchecked="#FF8A65"
+                        app:color_unchecked_stroke="@color/colorAccent_matte"
+                        app:small_tick="true"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Day 9"
+                        android:textAlignment="center"
+                        android:textColor="@color/Wheat"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <net.igenius.customcheckbox.CustomCheckBox
+                        android:id="@+id/i10"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="16dp"
+                        android:clickable="false"
+                        android:contextClickable="false"
+                        android:focusable="auto"
+                        android:focusableInTouchMode="true"
+                        android:longClickable="false"
+                        android:soundEffectsEnabled="true"
+                        app:color_checked="@color/Wheat"
+                        app:color_tick="@color/colorPrimary"
+                        app:color_unchecked="#FF8A65"
+                        app:color_unchecked_stroke="@color/colorAccent_matte"
+                        app:small_tick="true"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Day 10"
+                        android:textAlignment="center"
+                        android:textColor="@color/Wheat"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <net.igenius.customcheckbox.CustomCheckBox
+                        android:id="@+id/i11"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="16dp"
+                        android:clickable="false"
+                        android:contextClickable="false"
+                        android:focusable="auto"
+                        android:focusableInTouchMode="true"
+                        android:longClickable="false"
+                        android:soundEffectsEnabled="true"
+                        app:color_checked="@color/Wheat"
+                        app:color_tick="@color/colorPrimary"
+                        app:color_unchecked="#FF8A65"
+                        app:color_unchecked_stroke="@color/colorAccent_matte"
+                        app:small_tick="true"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Day 11"
+                        android:textAlignment="center"
+                        android:textColor="@color/Wheat"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <net.igenius.customcheckbox.CustomCheckBox
+                        android:id="@+id/i12"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="16dp"
+                        android:clickable="false"
+                        android:contextClickable="false"
+                        android:focusable="auto"
+                        android:focusableInTouchMode="true"
+                        android:longClickable="false"
+                        android:soundEffectsEnabled="true"
+                        app:color_checked="@color/Wheat"
+                        app:color_tick="@color/colorPrimary"
+                        app:color_unchecked="#FF8A65"
+                        app:color_unchecked_stroke="@color/colorAccent_matte"
+                        app:small_tick="true"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Day 12"
+                        android:textAlignment="center"
+                        android:textColor="@color/Wheat"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <net.igenius.customcheckbox.CustomCheckBox
+                        android:id="@+id/i13"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="16dp"
+                        android:clickable="false"
+                        android:contextClickable="false"
+                        android:focusable="auto"
+                        android:focusableInTouchMode="true"
+                        android:longClickable="false"
+                        android:soundEffectsEnabled="true"
+                        app:color_checked="@color/Wheat"
+                        app:color_tick="@color/colorPrimary"
+                        app:color_unchecked="#FF8A65"
+                        app:color_unchecked_stroke="@color/colorAccent_matte"
+                        app:small_tick="true"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Day 13"
+                        android:textAlignment="center"
+                        android:textColor="@color/Wheat"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <net.igenius.customcheckbox.CustomCheckBox
+                        android:id="@+id/i14"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="16dp"
+                        android:clickable="false"
+                        android:contextClickable="false"
+                        android:focusable="auto"
+                        android:focusableInTouchMode="true"
+                        android:longClickable="false"
+                        android:soundEffectsEnabled="true"
+                        app:color_checked="@color/Wheat"
+                        app:color_tick="@color/colorPrimary"
+                        app:color_unchecked="#FF8A65"
+                        app:color_unchecked_stroke="@color/colorAccent_matte"
+                        app:small_tick="true"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Day 14"
+                        android:textAlignment="center"
+                        android:textColor="@color/Wheat"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </com.google.android.flexbox.FlexboxLayout>
+
+            <LinearLayout
+                android:id="@+id/lpx"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10pt"
+                android:orientation="vertical"
+                android:paddingTop="10pt"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5pt"
+                    android:text="Quote of the day"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/l1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="In the midst of chaos, there is also opportunity"
+                    android:textColor="#E8F5E9"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/l2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="What you do today can improve all of your tomorrows"
+                    android:textColor="#E8F5E9"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/l3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Don’t wait. The time will never be just right."
+                    android:textColor="#E8F5E9"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/l4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The future depends on what you do today"
+                    android:textColor="#E8F5E9"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/l5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Everything will be okay in the end. If it’s not okay, it’s not the end"
+                    android:textColor="#E8F5E9"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/l6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I am not a product of my circumstances. I am a product of my decisions"
+                    android:textColor="#E8F5E9"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/l7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Act as if what you do makes a difference. It does"
+                    android:textColor="#E8F5E9"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/l8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="It’s OK to not be OK"
+                    android:textColor="#E8F5E9"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/l9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less"
+                    android:textColor="#E8F5E9"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/l10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Whatever you decide to do, make sure it makes you happy"
+                    android:textColor="#E8F5E9"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/l11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Clean your home regularly, particularly frequently touched surfaces like"
+                    android:textColor="#E8F5E9"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/l12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Stay home stay safe. Stay physically fit. Exercise regulary. Eat a nutritious diet. Don’t smoke."
+                    android:textColor="#E8F5E9"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/l13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Stay positive. Avoid alarmist news. Be connected to friends and family. Have a hobby"
+                    android:textColor="#E8F5E9"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lp2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="20pt"
+                android:foregroundGravity="bottom"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_baseline_wine_bar_24" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Congratulations!\nYou are safe now"
+                    android:textAlignment="center"
+                    android:textColor="#E8F5E9"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

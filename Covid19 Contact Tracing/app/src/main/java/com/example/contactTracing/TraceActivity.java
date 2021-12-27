@@ -42,10 +42,10 @@ public class TraceActivity extends AppCompatActivity {
                 | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
         llWarn = findViewById(R.id.warnMessage);
         llOk = findViewById(R.id.ok);
-        DatabaseReference peopleNearByCount = FirebaseDatabase.getInstance().getReference("UserCont")
+        DatabaseReference discoveredNearbyPeople = FirebaseDatabase.getInstance().getReference("UserCont")
                 .child(FirebaseAuth.getInstance().getUid());
         DatabaseReference userData = FirebaseDatabase.getInstance().getReference("User");
-        peopleNearByCount.addChildEventListener(new ChildEventListener() {
+        discoveredNearbyPeople.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot snapshot, String previousChildName) {
                 if (snapshot.exists()) {

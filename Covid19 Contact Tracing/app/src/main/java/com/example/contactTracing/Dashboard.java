@@ -8,6 +8,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
@@ -83,7 +84,7 @@ public class Dashboard extends AppCompatActivity {
         //All initialization
         initUI();
         addAllClickEventListener();
-        fetchData();
+        fetchData();  //For showing the covid situation of the world
 
         DatabaseReference myrefs = FirebaseDatabase.getInstance().getReference("use")
                 .child(FirebaseAuth.getInstance().getCurrentUser().getUid());

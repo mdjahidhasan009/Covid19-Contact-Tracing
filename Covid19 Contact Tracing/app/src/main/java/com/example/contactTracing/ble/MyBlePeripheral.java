@@ -11,6 +11,7 @@ import android.content.pm.PackageManager;
 import android.util.Log;
 
 import com.example.contactTracing.ble.callbacks.BlePeripheralCallback;
+import com.google.firebase.auth.FirebaseAuth;
 
 /**
  * This class will create a local bluetooth peripheral
@@ -19,18 +20,19 @@ public class MyBlePeripheral {
     private static final String TAG = MyBlePeripheral.class.getSimpleName();
 
     //Peripheral and GATT profile
-    public static final String ADVERTISING_NAME = "Jahid";
+    public static final String ADVERTISING_NAME = FirebaseAuth.getInstance().getUid();
     /**
      * Advertising settings
+     *
+     * Advertising modes are ADVERTISE_TX_POWER_HIGH - ADVERTISE_TX_POWER_MEDIUM -
+     * ADVERTISE_TX_POWER_LOW - ADVERTISE_TX_POWER_ULTRA_LOW
+     *
+     * Transmission power modes are - ADVERTISE_TX_POWER_HIGH - ADVERTISE_TX_POWER_MEDIUM -
+     * ADVERTISE_TX_POWER_LOW - ADVERTISE_TX_POWER_ULTRA_LOW
      **/
-    //Advertising modes are ADVERTISE_TX_POWER_HIGH - ADVERTISE_TX_POWER_MEDIUM
-    // - ADVERTISE_TX_POWER_LOW - ADVERTISE_TX_POWER_ULTRA_LOW
-    int mAdvertisingMode = AdvertiseSettings.ADVERTISE_MODE_LOW_LATENCY;
-    // Transmission power modes are - ADVERTISE_TX_POWER_HIGH - ADVERTISE_TX_POWER_MEDIUM -
-    // ADVERTISE_TX_POWER_LOW - ADVERTISE_TX_POWER_ULTRA_LOW
-    int mTransmissionPower = AdvertiseSettings.ADVERTISE_TX_POWER_HIGH;
-    //Callback Handlers
-    public BlePeripheralCallback mBlePeripheralCallback;
+    int mAdvertisingMode = AdvertiseSettings.ADVERTISE_MODE_LOW_LATENCY;  //Advertising Mode
+    int mTransmissionPower = AdvertiseSettings.ADVERTISE_TX_POWER_HIGH;   //Transmission Power Mode
+    public BlePeripheralCallback mBlePeripheralCallback;                  //Callback Handlers
     //Bluetooth Stuff
     private BluetoothAdapter mBluetoothAdapter;
     private BluetoothLeAdvertiser mBluetoothAdvertiser;

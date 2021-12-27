@@ -38,8 +38,8 @@ public class TraceService extends Service {
 
     /** Activity State **/
     private boolean mScanningActive = false;
-
-//    private Map<String, String> map = new HashMap<String, String>();
+    /** List of already discovered people **/
+    private Map<String, String> mapDiscoveredPeople = new HashMap<String, String>();
 
     @Override
     public IBinder onBind(Intent intent) {
@@ -112,14 +112,15 @@ public class TraceService extends Service {
         if (bluetoothDevice.getName() == null) {
             addPeripheral = false;
         }else{
+            if(!mapDiscoveredPeople.containsKey(bluetoothDevice.getName())) {
+                mapDiscoveredPeople.put(bluetoothDevice.getName(), bluetoothDevice.getName());
+
             Map<String, String> map = new HashMap<String, String>();
             map.put("uid", bluetoothDevice.getName());
-            FirebaseDatabase.getInstance().getReference("UserCont").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).push().setValue(map);
-
-//            if(!map.containsKey(bluetoothDevice.getName())) {
-//                map.put(bluetoothDevice.getName(), bluetoothDevice.getName());
-//                FirebaseDatabase.getInstance().getReference("UserCont").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).push().setValue(map);
-//            }
+                FirebaseDatabase.getInstance().getReference("UserCont")
+                        .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+                        .push().setValue(map);
+            }
         }
     }
     private final BleScanCallbackv21 mScanCallbackv21 = new BleScanCallbackv21() {

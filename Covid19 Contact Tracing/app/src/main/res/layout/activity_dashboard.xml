@@ -203,9 +203,10 @@
 
                             <TextView
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:paddingLeft="10dp"
-                                android:text="Total Cases" />
+                                android:text="Total Cases"
+                                android:textSize="13sp" />
 
                         </LinearLayout>
 
@@ -222,9 +223,10 @@
 
                             <TextView
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:paddingLeft="10dp"
-                                android:text="Recovered" />
+                                android:text="Recovered"
+                                android:textSize="13sp" />
 
                         </LinearLayout>
 
@@ -241,9 +243,10 @@
 
                             <TextView
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:paddingLeft="10dp"
-                                android:text="Deaths" />
+                                android:text="Deaths"
+                                android:textSize="13sp" />
 
                         </LinearLayout>
 
@@ -260,9 +263,10 @@
 
                             <TextView
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:paddingLeft="10dp"
-                                android:text="Active" />
+                                android:text="Active"
+                                android:textSize="13sp" />
 
                         </LinearLayout>
 

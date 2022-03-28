@@ -339,7 +339,7 @@ public class Dashboard extends AppCompatActivity {
     }
 
     private void fetchData() {
-        String url  = "https://corona.lmao.ninja/v2/all/";
+        String url  = "https://disease.sh/v3/covid-19/all";
 
         simpleArcLoader.start();
 
@@ -382,6 +382,7 @@ public class Dashboard extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                Log.v("Error", error.toString());
                 simpleArcLoader.stop();
                 simpleArcLoader.setVisibility(View.GONE);
                 scrollView.setVisibility(View.VISIBLE);

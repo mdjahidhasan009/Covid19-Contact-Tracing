@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Covid care"
+        android:text="Covid Care"
         app:fontFamily="@font/montserrat"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textStyle="bold" />
